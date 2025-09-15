@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Én</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="intro">
+  <h2>Szíja pici!</h2>
+  <p>Kattints a belépéshez</p>
+  <button onclick="startSite()">Belépés</button>
+</div>
+
+<video muted loop id="bg-video">
+  <source src="75674.mp4" type="video/mp4">
+</video>
+
+<audio id="bg-music" loop>
+  <source src="756742.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function startSite() {
+  const video = document.getElementById("bg-video");
+  const music = document.getElementById("bg-music");
+  const intro = document.getElementById("intro");
+
+  video.play();
+  music.play();
+  intro.style.display = "none";
+}
+</script>
+
+<h1>Rólam</h1>
+<table>
+  <tr><td>Teljes név:</td><td>Gazdik Bálint</td></tr>
+  <tr><td>Iskola:</td><td>Szent Benedek Gimnázium, Szakképző Iskola és Kollégium</td></tr>
+  <tr><td>Osztály:</td><td>11.i</td></tr>
+  <tr><td>Hobbik amiket űzök:</td><td>Beat készítés, Edzés, Programozás</td></tr>
+</table>
+
+<p style="display: block; margin-left: 0;">
+  A nevem Gazdik Bálint, mióta eszemet tudom foglalkoztat a zene világa. 
+  A zene az egyik legősibb és legerősebb kommunikációs forma, ami érzelmeket közvetít, történeteket mesél el,
+  és közösségeket köt össze — akár szavak nélkül is. Nincs még egy médium, ami ennyire közvetlenül hat az ember érzelmeire.
+</p>
+
+<nav>
+  <a href="index.html">Zene</a> |
+  <a href="instrument.html">Zenei ízlésem</a>
+</nav>
+
+</body>
+</html>
